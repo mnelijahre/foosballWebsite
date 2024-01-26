@@ -3,3 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header h1{
+    text-align: center;
+}
+
+#balls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ball{
+    width: 10vw;
+    transition: transform 1s;
+}
+
+.ball:hover{
+    transform: rotateY('180');
+}
