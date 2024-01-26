@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-
+::-webkit-scrollbar {
+    display: none;
+  }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    overflow: none;
 }
 
 header{
@@ -15,7 +20,7 @@ header{
     gap: 10vw;
     background: white;
     align-items: center;
-    height: 10vh;
+    height: 20vh;
     border-bottom: 2px solid black;
 }
 
@@ -24,11 +29,12 @@ header h1{
 }
 
 #logo{
-    position: absolute;
-    left: 5vw;
+
     width: 10vw;
 }
-
+#popUpMenu{
+    background: red;
+}
 body{
     background: white;
 }
@@ -53,4 +59,34 @@ body{
 .ball:hover{
     transform: rotateX(360deg);
 
+}
+
+.wordParagraph{
+    height: 40vh;
+    display: flex;
+    font-family: 'Righteous', sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10vw;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.wordParagraph h1{
+
+    font-size: 1.5rem;
+}
+.wordParagraph p{
+
+    font-size: 1.2rem;
+}
+
+.wideImage{
+    width: 100vw;
+    height: 40vh;
+    background-image: url(table.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
