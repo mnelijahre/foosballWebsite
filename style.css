@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -5,18 +7,37 @@
 }
 
 header{
+    font-family: 'Righteous', sans-serif;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5vw;
+    gap: 10vw;
+    background: white;
     align-items: center;
+    height: 10vh;
+    border-bottom: 2px solid black;
 }
 
 header h1{
-
     text-align: center;
 }
 
 #logo{
+    position: absolute;
+    left: 5vw;
     width: 10vw;
+}
+
+body{
+    background: white;
+}
+
+#introParagraph{
+    width: 100vw;
+    height: 20vh;
+    background: rgb(182, 182, 182);
+    padding: 10vw;
 }
 
 #balls{
@@ -32,8 +53,4 @@ header h1{
 .ball:hover{
     transform: rotateX(360deg);
 
-}
-
-/*div:hover > .ball{
-    transform: rotateX(-360deg);
 }
