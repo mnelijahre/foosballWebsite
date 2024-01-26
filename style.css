@@ -4,8 +4,19 @@
     box-sizing: border-box;
 }
 
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 header h1{
+
     text-align: center;
+}
+
+#logo{
+    width: 10vw;
 }
 
 #balls{
@@ -19,7 +30,7 @@ header h1{
     transition: transform 1s;
 }
 .ball:hover{
-    transform: rotateX(-360deg);
+    transform: rotateX(360deg);
 
 }
 
