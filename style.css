@@ -18,7 +18,11 @@ header h1{
     width: 10vw;
     transition: transform 1s;
 }
-
 .ball:hover{
-    transform: rotateY('180');
+    transform: rotateX(-360deg);
+
+}
+
+/*div:hover > .ball{
+    transform: rotateX(-360deg);
 }
