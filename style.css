@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 ::-webkit-scrollbar {
     display: none;
-  }
+}
+
+:root{
+    --gold: #ffcc33;
+    --maroon: #7a0019;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -17,10 +23,10 @@ header{
     flex-direction: row;
     justify-content: center;
     padding: 5vw;
-    gap: 10vw;
+    gap: 1vw;
     background: white;
     align-items: center;
-    height: 20vh;
+    height: 15vh;
     border-bottom: 2px solid black;
 }
 
@@ -32,43 +38,61 @@ header h1{
 
     width: 10vw;
 }
-#popUpMenu{
-    background: red;
+
+#mainPage{
+    display: grid;
+
+    grid-template-areas: 
+    "welcomeTo"
+    "pic1"
+    "allSkill"
+    "pic2"
+    "joinToday";
 }
+
 body{
     background: white;
 }
 
-#introParagraph{
-    width: 100vw;
-    height: 20vh;
-    background: rgb(182, 182, 182);
-    padding: 10vw;
+.removeLinkStyle{
+   color: inherit;
+}
+.removeLinkStyle:hover{
+    color: var(--maroon);
 }
 
-#balls{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#welcomeTo{
+    grid-area: welcomeTo;
 }
-
-.ball{
-    width: 10vw;
-    transition: transform 1s;
-}
-.ball:hover{
-    transform: rotateX(360deg);
+#pic1{
+    grid-area: pic1;
+    background-image: url(table.png) ;
 
 }
+#pic2{
+    grid-area: pic2;
+    background-image: url(FBCLogo.png);
+}
+#allSkill{
+    grid-area: allSkill;
+}
+
+#joinToday{
+    grid-area: joinToday;
+}
+
+
 
 .wordParagraph{
-    height: 40vh;
+    --width: 1px;
+    border-bottom: var(--width) solid black;
+    border-top: var(--width) solid black;
     display: flex;
     font-family: 'Righteous', sans-serif;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 10vw;
+    padding: 8vh 5vw;
     flex-direction: column;
     gap: 20px;
 
@@ -83,10 +107,31 @@ body{
 }
 
 .wideImage{
-    width: 100vw;
     height: 40vh;
-    background-image: url(table.png) ;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+
+@media screen and (min-width: 850px) {
+    #mainPage{
+        grid-template-areas: "welcomeTo allSkill"
+        "joinToday joinToday";
+        grid-template-columns: auto auto ;
+        background: url(table.png), rgb(149, 149, 149); 
+        background-blend-mode:multiply
+    }
+    .gold{
+        background-color: var(--gold);
+        margin: 5vw;
+        border-radius: 5vw;
+    }
+    
+    .maroon{
+        background-color: var(--maroon);
+        margin: 5vw;
+        border-radius: 5vw;
+    }
 }
