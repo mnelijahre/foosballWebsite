@@ -17,19 +17,7 @@
     overflow: none;
 }
 
-header{
-    grid-area: header;
-    font-family: 'Righteous', sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 5vw;
-    gap: 1vw;
-    background: white;
-    align-items: center;
-    height: 15vh;
-    border-bottom: 2px solid black;
-}
+
 
 header h1{
     text-align: center;
@@ -51,7 +39,19 @@ header h1{
     "pic2"
     "joinToday";
 }
-
+header{
+    grid-area: header;
+    font-family: 'Righteous', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5vw;
+    gap: 1vw;
+    background: white;
+    align-items: center;
+    height: 15vh;
+    border-bottom: 2px solid black;
+}
 body{
     background: white;
 }
