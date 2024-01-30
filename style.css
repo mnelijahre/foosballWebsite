@@ -19,7 +19,7 @@
 
 
 
-header h1{
+#header h1{
     text-align: center;
 }
 
@@ -39,7 +39,7 @@ header h1{
     "pic2"
     "joinToday";
 }
-header{
+#header{
     grid-area: header;
     font-family: 'Righteous', sans-serif;
     display: flex;
