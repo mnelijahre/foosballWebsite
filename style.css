@@ -127,7 +127,7 @@ body{
         "welcomeTo ."
         ". allSkill";
         grid-template-columns: repeat(50vw,2) ;
-        grid-template-rows: 10vh 40vh 40vh;
+        grid-template-rows: 10vh 45vh 45vh;
 
         background: url(table.png), rgb(149, 149, 149); 
         background-blend-mode:multiply
