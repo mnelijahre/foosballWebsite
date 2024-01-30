@@ -120,7 +120,8 @@ body{
 @media screen and (min-width: 850px) {
     #mainPage{
         height: 100vh;
-        grid-template-areas: 
+        grid-template-areas:
+ 
         "header header"
         "welcomeTo allSkill"
         "joinToday joinToday";
@@ -131,7 +132,7 @@ body{
         background-blend-mode:multiply
     }
     .wordParagraph{
-        padding: 0px;
+        padding: 1vh 3vh;
         --width: 0; /* sets border width to 0 */
     }
     .gold{
