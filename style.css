@@ -39,6 +39,7 @@
     "pic2"
     "joinToday";
 }
+
 #header{
     grid-area: header;
     font-family: 'Righteous', sans-serif;
@@ -49,7 +50,6 @@
     gap: 1vw;
     background: white;
     align-items: center;
-    height: 15vh;
     border-bottom: 2px solid black;
 }
 body{
@@ -121,7 +121,6 @@ body{
     #mainPage{
         height: 100vh;
         grid-template-areas:
- 
         "header header"
         "welcomeTo allSkill"
         "joinToday joinToday";
