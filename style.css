@@ -59,6 +59,7 @@ body{
 }
 
 .removeLinkStyle{
+
    color: inherit;
 }
 .removeLinkStyle:hover{
@@ -124,7 +125,7 @@ body{
 }
 .foosman{
     transition: transform 1s ease;
-    width: 100%;
+    width: 8vw;
 }
 
 
