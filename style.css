@@ -21,8 +21,13 @@
 
 
 
-#header h1{
+#title{
     text-align: center;
+
+}
+
+#title::selection {
+    background-color: red;
 }
 
 #logo{
@@ -30,7 +35,7 @@
     width: 10vw;
 }
 
-#mainPage{
+body{
     display: grid;
 
     grid-template-areas: 
@@ -50,13 +55,9 @@
     justify-content: center;
     padding: 5vw;
     gap: 1vw;
-    background: white;
     align-items: center;
-    border-bottom: 2px solid black;
 }
-body{
-    background: white;
-}
+
 
 .removeLinkStyle{
 
@@ -65,7 +66,9 @@ body{
 .removeLinkStyle:hover{
     color: var(--maroon);
 }
-
+#firstPage{
+    grid-area: firstPage;
+}
 #welcomeTo{
     grid-area: welcomeTo;
 }
@@ -129,18 +132,28 @@ body{
 }
 
 
-@media screen and (min-width: 850px) {
-    #mainPage{
-        height: 100vh;
+@media screen and (min-width: 230px) {
+    body {
+        height: 200vh;
         grid-template-areas:
-        "header header"
+        "firstPage firstPage"
         "welcomeTo joinToday"
         "allSkill .";
         grid-template-columns: 50vw 50vw ;
-        grid-template-rows: 10vh 45vh 45vh;
+        grid-template-rows: 100vh 45vh 45vh;
 
         background: url(table.png), rgb(149, 149, 149); 
-        background-blend-mode:multiply
+        background-blend-mode:multiply;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+
+    }
+    #firstPage{
+        display: flex;
+        justify-content: center;
+
     }
     .wordParagraph{
         padding: 1vh 3vh;
