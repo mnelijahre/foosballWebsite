@@ -36,17 +36,7 @@
     width: 10vw;
 }
 
-body{
-    display: grid;
 
-    grid-template-areas: 
-    "firstPage"
-    "welcomeTo"
-    "pic1"
-    "allSkill"
-    "pic2"
-    "joinToday";
-}
 
 #header{
     grid-area: header;
@@ -136,12 +126,7 @@ body{
 @media screen and (min-width: 650px) {
     body {
         height: 200vh;
-        grid-template-areas:
-        "firstPage firstPage"
-        "welcomeTo joinToday"
-        "allSkill .";
-        grid-template-columns: 50vw 50vw ;
-        grid-template-rows: 100vh 45vh 45vh;
+
 
         background: url(table.png), rgb(149, 149, 149); 
         background-blend-mode:multiply;
@@ -152,9 +137,10 @@ body{
 
     }
 
+
     #firstPage{
         display: flex;
-
+        height: 100vh;
         flex-direction: column;
         justify-content: center;
 
