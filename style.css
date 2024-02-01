@@ -251,24 +251,16 @@ footer{
         text-shadow: none;
     }
     .buttonOne{
+        z-index: 1;
         position: relative;
+        box-shadow: 4px 4px 2px black;
     }
     .buttonOne:hover{
         color: white;
     }
     .buttonOne:active{
-        transform: translate(2px, 2px);
+        transform: translate(4px, 4px);
+        box-shadow: 0 0 2px black;
     }
-    .buttonOne::before{
-        z-index: -1;
-        content: "";
-        background: black;
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        width: 100%;
-        height: 100%;
-        border-radius: inherit;
-        transform: translate(2px, 2px);
-    }
+    
 }
