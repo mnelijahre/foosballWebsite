@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -6,24 +8,29 @@
 :root{
     --gold: #ffcc33;
     --gold: #ffd75f;
-    --maroon: #7a0019;
+    --maroon2: #7a0019;
     --maroon: rgba(122, 0, 25, 0.7);
 }
 
 *{
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
     overflow: none;
+    font-family: 'Roboto';
 }
 
-
+a{
+    text-decoration: none;
+    color: black;
+}
 
 #title{
     text-align: center;
-
+    font-family: "Righteous";
 }
 
 #title::selection {
@@ -32,7 +39,6 @@
 }
 
 #logo{
-
     width: 10vw;
 }
 
@@ -49,7 +55,18 @@
     align-items: center;
 }
 
+#isaac{
+    background: url(Isaac.jpg);
+    background-size: cover;
 
+}
+#blake{
+    background: url(Blake.jpg);
+    background-size: cover;
+    background-position: center;
+
+
+}
 .removeLinkStyle{
 
    color: inherit;
@@ -74,27 +91,34 @@
 }
 #allSkill{
     grid-area: allSkill;
+    flex-direction:row-reverse
 }
 
 #joinToday{
     grid-area: joinToday;
 }
 
-
+#secondPage{
+    height: 100vh;
+}
 
 .wordParagraph{
     --width: 5px;
     border-bottom: var(--width) solid black;
     border-top: var(--width) solid black;
     display: flex;
-    font-family: 'Righteous', sans-serif;
+    position: relative;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 8vh 5vw;
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: row;
+    height: 40%;
+    flex: 1;
 
+}
+.wordParagraph div{
+    flex: 1;
+    height: 100%;
 }
 .wordParagraph h1{
 
@@ -104,7 +128,16 @@
 
     font-size: 1.2rem;
 }
-
+.wordParagraph img{
+    width: 50%;
+    height: 100%;
+}
+.wordParagraphText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
 .wideImage{
     height: 40vh;
     background-position: center;
@@ -121,49 +154,75 @@
     transition: transform 1s ease;
     width: 8vw;
 }
+#firstPage {
+    background: url(table.png), rgb(149, 149, 149); 
+    background-blend-mode:multiply;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.buttonOne{
+    color: var(--gold);
+    background: var(--maroon2);
+    padding: 10px;
+    border-radius: 5px;
+}
+@media screen and (min-width: 850px) {
+    
 
 
-@media screen and (min-width: 650px) {
-    body {
-        height: 200vh;
-
-
-        background: url(table.png), rgb(149, 149, 149); 
-        background-blend-mode:multiply;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;
-
-    }
-
-
-    #firstPage{
+   #allSkill{
+    flex-direction: row;
+   }
+    #secondPage{
+        background: white;
+        padding: 10vw;
         display: flex;
-        height: 100vh;
-        flex-direction: column;
-        justify-content: center;
-
+        gap: 5vw;
+        flex-direction: row;
     }
     .wordParagraph{
-        padding: 1vh 3vh;
+        height: 300px;
+        overflow: hidden;
         --width: 0; /* sets border width to 0 */
     }
+    
+   
+    .wordParagraph h1{
+        font-size: 1.2rem;
+    }
+    .wordParagraph p{
+        font-size: 1rem;
+    }
+
     .gold{
         background-color: var(--gold);
-        margin: 5vw;
-        border-radius: 5vw;
+        border-radius: 2vw;
     }
 
     .maroon{
         background-color: var(--maroon);
-        margin: 5vw;
-        border-radius: 5vw;
+        border-radius: 2vw;
     }
     .mobile{
-        display: none;
+        display: none !important;
     }
     a:hover > .foosman{
         transform: rotateX(-365deg);
+    }
+    #title{
+        cursor: default;
+        font-size: 4rem;
+        text-shadow: white 0px 0px 5px;
+        transition: text-shadow 1s;
+    }
+    #title:hover{
+        text-shadow: none;
     }
 }
