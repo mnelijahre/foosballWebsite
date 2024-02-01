@@ -105,7 +105,7 @@ a{
 
 #secondPage{
     height: 100vh;
-    padding: 10vw;
+    padding: 20vw 1vw;
     gap: 5vw;
     flex-direction: column;
     display: flex;
