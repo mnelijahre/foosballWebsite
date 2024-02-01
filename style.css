@@ -105,7 +105,7 @@ a{
 
 #secondPage{
     height: 100vh;
-    padding: 20vw 1vw;
+    padding: 10vw 5vw;
     gap: 5vw;
     flex-direction: column;
     display: flex;
@@ -122,8 +122,8 @@ a{
     align-items: center;
     text-align: center;
     flex-direction: row;
-    height: 40%;
-    width: 70vw;
+    min-height: 40%;
+    width: 90vw;
     flex: 1;
     border-radius: 2vw;
     overflow: hidden;
@@ -139,7 +139,7 @@ a{
 }
 .wordParagraph p{
 
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .wordParagraph img{
     width: 50%;
