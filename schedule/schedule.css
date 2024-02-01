@@ -24,10 +24,13 @@ body{
     align-items: center;
 }
 #block{
-    background: var(--maroon2);
-    opacity: .5;
-    border: 1px solid black;
+    background: black;
+    opacity: .8;
+    border: 2px solid black;
     padding: 2vh;
     border-radius: 2vh;
     color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
 }
