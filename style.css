@@ -251,6 +251,7 @@ footer{
         text-shadow: none;
     }
     .buttonOne{
+
         z-index: 1;
         position: relative;
         box-shadow: 4px 4px 2px black;
