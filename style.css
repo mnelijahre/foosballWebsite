@@ -31,8 +31,11 @@ a{
 #title{
     text-align: center;
     font-family: "Righteous";
+    cursor: default;
+    font-size: clamp(20px, 8vw, 5rem);
+    text-shadow: white 0px 0px 5px;
+    transition: text-shadow 1s;
 }
-
 #title::selection {
     background: none;
     color: #7a0019;
@@ -216,12 +219,7 @@ a{
     a:hover > .foosman{
         transform: rotateX(-365deg);
     }
-    #title{
-        cursor: default;
-        font-size: 4rem;
-        text-shadow: white 0px 0px 5px;
-        transition: text-shadow 1s;
-    }
+   
     #title:hover{
         text-shadow: none;
     }
