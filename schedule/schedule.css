@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --gold: #ffcc33;
+    --gold: #ffd75f;
+    --maroon2: #7a0019;
+    --maroon: rgba(122, 0, 25, 0.7);
+}
+
+body{
+    background: url("../table.png"), rgb(149, 149, 149); 
+    background-blend-mode:multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#block{
+    background: var(--maroon2);
+    opacity: .5;
+    border: 1px solid black;
+    padding: 2vh;
+    border-radius: 2vh;
+    color: white;
+}
