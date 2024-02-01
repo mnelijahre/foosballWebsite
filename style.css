@@ -88,11 +88,7 @@ a{
 #welcomeTo{
     grid-area: welcomeTo;
 }
-#pic1{
-    grid-area: pic1;
-    background-image: url(table.png) ;
 
-}
 #pic2{
     grid-area: pic2;
     background-image: url(FBCLogo.png);
@@ -104,16 +100,22 @@ a{
 
 #joinToday{
     grid-area: joinToday;
+    flex-direction: row;
 }
 
 #secondPage{
     height: 100vh;
+    padding: 10vw;
+    gap: 5vw;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 50px rgb(77, 77, 77) inset;
 }
 
 .wordParagraph{
-    --width: 5px;
-    border-bottom: var(--width) solid black;
-    border-top: var(--width) solid black;
+
     display: flex;
     position: relative;
     justify-content: center;
@@ -121,7 +123,10 @@ a{
     text-align: center;
     flex-direction: row;
     height: 40%;
+    width: 70vw;
     flex: 1;
+    border-radius: 2vw;
+    overflow: hidden;
 
 }
 .wordParagraph div{
@@ -175,6 +180,13 @@ a{
     justify-content: center;
 
 }
+.gold{
+    background-color: var(--gold);
+}
+
+.maroon{
+    background-color: var(--maroon);
+}
 .buttonOne{
     color: var(--gold);
     background: var(--maroon2);
@@ -189,16 +201,11 @@ a{
     flex-direction: row;
    }
     #secondPage{
-        background: white;
-        padding: 10vw;
-        display: flex;
-        gap: 5vw;
-        flex-direction: row;
+        height: 50vh;
+       flex-direction: row;
     }
     .wordParagraph{
         height: 300px;
-        overflow: hidden;
-        --width: 0; /* sets border width to 0 */
     }
     
    
@@ -209,15 +216,7 @@ a{
         font-size: 1rem;
     }
 
-    .gold{
-        background-color: var(--gold);
-        border-radius: 2vw;
-    }
-
-    .maroon{
-        background-color: var(--maroon);
-        border-radius: 2vw;
-    }
+    
     .mobile{
         display: none !important;
     }
