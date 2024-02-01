@@ -11,7 +11,12 @@
     --maroon2: #7a0019;
     --maroon: rgba(122, 0, 25, 0.7);
 }
-
+#disclaimer{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: var(--gold);
+}
 *{
     scroll-behavior: smooth;
     margin: 0;
