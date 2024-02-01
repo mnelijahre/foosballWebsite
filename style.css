@@ -194,6 +194,26 @@ a{
     padding: 10px;
     border-radius: 5px;
 }
+footer{
+    background: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 10vw;
+    padding: 2rem 1rem;
+    color: white;
+}
+
+#infoPillar{
+    display: flex;
+    flex-direction: column;
+}
+
+#footerImg{
+    --size: clamp(3rem, 10vw, 6rem);
+    width: var(--size);
+    height: var(--size);
+}
 @media screen and (min-width: 850px) {
     
 
