@@ -23,52 +23,24 @@
     font-family: 'Roboto';
 }
 
-#linkHeader{
-    position:absolute;
-    left: 0;
-    top: 0;
-    height: 10vh;
-    width: 100vw;
-    padding: 0 5vw;
-    background: rgba(0,0,0,.5);
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: center;
-    color: white;
-    gap: 5vw;
-    
-}
-
-#linkHeader a{
-    color: white;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-
-}
-
-
-#linkHeader a:hover::before{
-    content: "";
-    transform: rotateZ(360deg);
-
-    opacity: 1;
-}
-#linkHeader a::before{
-    content: "";
-    transition: transform 1s, opacity 1s;
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    right: 100%;
-    background: url(res/ball.png);
-    background-size: contain;
+#firstPage {
+    background: url(res/table.png), rgb(149, 149, 149); 
+    background-blend-mode:multiply;
     background-repeat: no-repeat;
-    opacity: 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+
 }
+body{
+    cursor: url('res/foos.JPG') pointer; /* Doesn't work */
+
+}
+
 
 a{
     text-decoration: none;
@@ -204,19 +176,7 @@ a{
     justify-content: space-evenly;
 }
 
-#firstPage {
-    background: url(res/table.png), rgb(149, 149, 149); 
-    background-blend-mode:multiply;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
 
-}
 .gold{
     background-color: var(--gold);
 }

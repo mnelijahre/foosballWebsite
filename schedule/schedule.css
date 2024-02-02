@@ -12,7 +12,7 @@
 }
 
 body{
-    background: url("../table.png"), rgb(149, 149, 149); 
+    background: url("../res/table.png"), rgb(149, 149, 149); 
     background-blend-mode:multiply;
     background-position: center;
     background-repeat: no-repeat;

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    overflow: none;
+    font-family: 'Roboto';
+}
+
+#home{
+    margin-right: auto;
+}
+
+#linkHeader{
+    position:absolute;
+    left: 0;
+    top: 0;
+    height: 10vh;
+    width: 100vw;
+    padding: 0 5vw;
+    background: rgba(0,0,0,.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    color: white;
+    gap: 5vw;
+    
+}
+
+#linkHeader a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+
+#linkHeader a:hover::before{
+    content: "";
+    transform: rotateZ(360deg);
+
+    opacity: 1;
+}
+#linkHeader a::before{
+    content: "";
+    transition: transform 1s, opacity 1s;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 100%;
+    background: url(res/ball.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+}
