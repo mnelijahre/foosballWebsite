@@ -201,10 +201,7 @@ a{
 }
 
 
-.foosman{
-    transition: transform 1s ease;
-    width: 8vw;
-}
+
 #firstPage {
     background: url(table.png), rgb(149, 149, 149); 
     background-blend-mode:multiply;
@@ -221,15 +218,11 @@ a{
 .gold{
     background-color: var(--gold);
 }
-
-.maroon{
-    background-color: var(--maroon);
-}
 .buttonOne{
     color: var(--gold);
     background: var(--maroon2);
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: color .2s;
 }
 footer{
@@ -290,8 +283,7 @@ footer{
     #tileTwoImage{
         background-position: right;
     }
- 
-   
+
     .wordParagraph h1{
         font-size: 1.2rem;
     }
@@ -303,9 +295,6 @@ footer{
         text-shadow: none;
     }
     .buttonOne{
-
-        z-index: 1;
-        position: relative;
         box-shadow: 4px 4px 2px black;
     }
     .buttonOne:hover{
