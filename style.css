@@ -104,7 +104,9 @@ a{
     gap: 1vw;
     align-items: center;
 }
-
+#tileTwo{
+    flex-direction: row-reverse;
+}
 
 #tileOneImage{
     background: url(foos.jpg);
@@ -132,16 +134,7 @@ a{
 .removeLinkStyle:hover{
     color: var(--maroon);
 }
-#firstPage{
-    grid-area: firstPage;
-}
-#tileOne{
-    grid-area: tileOne;
-}
-#tileTwo{
-    grid-area: tileTwo;
-    flex-direction:row-reverse
-}
+
 #tileFour{
     display: flex;
     flex-direction: row-reverse;
@@ -263,13 +256,27 @@ footer{
 @media screen and (min-width: 850px) {
     
 
-
+   #tileOne{
+    grid-area: a;
+   } 
    #tileTwo{
-    flex-direction: row;
+    grid-area: b;
+   }
+   #tileThree{
+    grid-area: c;
+   }
+   #tileFour{
+    grid-area: d;
+   }
+   .wordParagraph{
+    width: 40vw;
    }
     #secondPage{
-        height: 50vh;
-       flex-direction: row;
+        height: 100vh;
+        display: grid;
+        grid-template-areas: 
+        "a b"
+        "c d";
     }
     .wordParagraph{
         height: 300px;
@@ -289,9 +296,6 @@ footer{
         font-size: 1rem;
     }
 
-
- 
-   
     #title:hover{
         text-shadow: none;
     }
