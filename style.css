@@ -80,8 +80,7 @@ a{
     font-family: "Righteous";
     cursor: pointer;
     font-size: clamp(20px, 8vw, 5rem);
-    text-shadow: white 0px 0px 5px;
-    transition: text-shadow 1s;
+    animation: pulse 20s infinite;
 }
 #title::selection {
     background: none;
@@ -248,6 +247,22 @@ footer{
     --size: clamp(3rem, 10vw, 6rem);
     width: var(--size);
     height: var(--size);
+}
+
+@keyframes pulse {
+    0% {
+        text-shadow: var(--gold) 0 0 5px;
+        color: var(--maroon2);
+    } 
+    50%  {
+        text-shadow: var(--maroon2) 0px 0px 5px;
+        color: var(--gold);
+    } 
+    100% {
+        text-shadow: var(--gold) 0px 0px 5px;
+        color: var(--maroon2)
+    } 
+    
 }
 @media screen and (min-width: 850px) {
     
