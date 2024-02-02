@@ -105,21 +105,22 @@ a{
     align-items: center;
 }
 
-#isaac{
-    background: url(Blake.JPG);
-    background-size: cover;
 
-}
-#blake{
+#tileOneImage{
     background: url(foos.jpg);
     background-size: cover;
     background-position: center;
 }
-#connect{
+#tileTwoImage{
+    background: url(Blake.JPG);
+    background-size: cover;
+
+}
+#tileThreeImage{
     background: url(Isaac.jpg);
     background-size: cover;
 }
-#officers{
+#tileFourImage{
     background: url(foosbalpeople.jpg);
     background-size: cover;
     background-position: center;
@@ -134,18 +135,22 @@ a{
 #firstPage{
     grid-area: firstPage;
 }
-#welcomeTo{
-    grid-area: welcomeTo;
+#tileOne{
+    grid-area: tileOne;
 }
-
+#tileTwo{
+    grid-area: tileTwo;
+    flex-direction:row-reverse
+}
+#tileFour{
+    display: flex;
+    flex-direction: row-reverse;
+}
 #pic2{
     grid-area: pic2;
     background-image: url(FBCLogo.png);
 }
-#allSkill{
-    grid-area: allSkill;
-    flex-direction:row-reverse
-}
+
 
 #joinToday{
     grid-area: joinToday;
@@ -201,22 +206,8 @@ a{
     align-items: center;
     justify-content: space-evenly;
 }
-.wideImage{
-    height: 40vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#joinToday{
-    display: flex;
-    flex-direction: row;
-    gap: 0;
-    justify-content: center;
-}
-#meetOfficers{
-    display: flex;
-    flex-direction: row-reverse;
-}
+
+
 .foosman{
     transition: transform 1s ease;
     width: 8vw;
@@ -273,7 +264,7 @@ footer{
     
 
 
-   #allSkill{
+   #tileTwo{
     flex-direction: row;
    }
     #secondPage{
@@ -283,10 +274,10 @@ footer{
     .wordParagraph{
         height: 300px;
     }
-    #blake{
+    #tileOneImage{
         background-position: left;
     }
-    #isaac{
+    #tileTwoImage{
         background-position: right;
     }
  
@@ -298,13 +289,8 @@ footer{
         font-size: 1rem;
     }
 
-    
-    .mobile{
-        display: none !important;
-    }
-    a:hover > .foosman{
-        transform: rotateX(-365deg);
-    }
+
+ 
    
     #title:hover{
         text-shadow: none;
