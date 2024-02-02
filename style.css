@@ -90,6 +90,11 @@ a{
 
 #logo{
     width: 10vw;
+    
+}
+
+#logo::selection{
+    background: none;
 }
 
 
@@ -199,8 +204,6 @@ a{
     align-items: center;
     justify-content: space-evenly;
 }
-
-
 
 #firstPage {
     background: url(table.png), rgb(149, 149, 149); 
