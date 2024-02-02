@@ -24,7 +24,7 @@
 }
 
 #linkHeader{
-    position: fixed;
+    position:absolute;
     left: 0;
     top: 0;
     height: 10vh;
@@ -63,7 +63,7 @@
     position: absolute;
     width: 20px;
     height: 20px;
-    left: 100%;
+    right: 100%;
     background: url(ball.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -106,16 +106,18 @@ a{
 }
 
 #isaac{
-    background: url(Isaac.jpg);
+    background: url(Blake.JPG);
     background-size: cover;
 
 }
 #blake{
-    background: url(Blake.jpg);
+    background: url(foos.jpg);
     background-size: cover;
     background-position: center;
-
-
+}
+#connect{
+    background: url(Isaac.jpg);
+    background-size: cover;
 }
 .removeLinkStyle{
 
@@ -146,7 +148,7 @@ a{
 }
 
 #secondPage{
-    height: 100vh;
+    height: 120vh;
     padding: 10vw 5vw;
     gap: 5vw;
     flex-direction: column;
@@ -164,7 +166,7 @@ a{
     align-items: center;
     text-align: center;
     flex-direction: row;
-    min-height: 40%;
+    min-height: 30%;
     width: 90vw;
     flex: 1;
     border-radius: 2vw;
@@ -272,7 +274,13 @@ footer{
     .wordParagraph{
         height: 300px;
     }
-    
+    #blake{
+        background-position: left;
+    }
+    #isaac{
+        background-position: right;
+    }
+ 
    
     .wordParagraph h1{
         font-size: 1.2rem;
