@@ -114,12 +114,12 @@ a{
 }
 
 #tileOneImage{
-    background: url(foos.jpg);
+    background: url(foos.JPG);
     background-size: cover;
     background-position: center;
 }
 #tileTwoImage{
-    background: url(Blake.JPG);
+    background: url(Blake.jpg);
     background-size: cover;
 
 }
