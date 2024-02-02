@@ -64,7 +64,7 @@
     width: 20px;
     height: 20px;
     right: 100%;
-    background: url(ball.png);
+    background: url(res/ball.png);
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0;
@@ -114,21 +114,21 @@ a{
 }
 
 #tileOneImage{
-    background: url(foos.JPG);
+    background: url(res/foos.JPG);
     background-size: cover;
     background-position: center;
 }
 #tileTwoImage{
-    background: url(Blake.jpg);
+    background: url(res/Blake.jpg);
     background-size: cover;
 
 }
 #tileThreeImage{
-    background: url(Isaac.jpg);
+    background: url(res/Isaac.jpg);
     background-size: cover;
 }
 #tileFourImage{
-    background: url(foosbalpeople.jpg);
+    background: url(res/foosbalpeople.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -146,7 +146,7 @@ a{
 }
 #pic2{
     grid-area: pic2;
-    background-image: url(FBCLogo.png);
+    background-image: url(res/FBCLogo.png);
 }
 
 
@@ -206,7 +206,7 @@ a{
 }
 
 #firstPage {
-    background: url(table.png), rgb(149, 149, 149); 
+    background: url(res/table.png), rgb(149, 149, 149); 
     background-blend-mode:multiply;
     background-repeat: no-repeat;
     background-attachment: fixed;
