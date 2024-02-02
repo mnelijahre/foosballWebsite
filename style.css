@@ -272,14 +272,17 @@ footer{
     width: 40vw;
    }
     #secondPage{
-        height: 100vh;
+        height: 130vh;
+        padding: 10vh;
+        gap: 10vh;
         display: grid;
+        position: relative;
         grid-template-areas: 
         "a b"
         "c d";
     }
     .wordParagraph{
-        height: 300px;
+        height: 50vh;
     }
     #tileOneImage{
         background-position: left;
