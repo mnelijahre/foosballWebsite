@@ -1,0 +1,24 @@
+
+#pageOne{
+    height: 100vh;
+}
+#officers{
+    height: 100vh;
+
+}
+.personContainer{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.selectedPerson{
+    box-shadow: 1px 1px 1px black;
+}
+
+.personContainer img{
+    border-radius: 100px;
+    height: 100%;
+}
