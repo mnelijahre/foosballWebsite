@@ -15,7 +15,8 @@
 }
 
 .selectedPerson{
-    box-shadow: 1px 1px 1px black;
+    box-shadow: 0px 0px 30px rgb(112, 240, 0),
+    0px 0px 5px black;
 }
 
 .personContainer img{
