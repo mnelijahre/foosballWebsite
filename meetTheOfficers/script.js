@@ -16,10 +16,10 @@ function person(name, major, details, backgroundSelected){
     this.backgroundSelected = backgroundSelected;
 }
 
-const personOneDetails = new person("Sam", "Computer Science", "A good person", "res/person1.jpg");
-const personTwoDetails = new person("John", "Biology", "Nobody special", "res/person2.jpg");
-const personThreeDetails = new person("Bret", "Art", "A special man", "res/person3.jpg");
-const personFourDetails = new person("George", "Theater", "A dork", "res/person4.jpg");
+const personOneDetails = new person("Sam", "President", "Lorem Ipsum", "res/person1.jpg");
+const personTwoDetails = new person("John", "Treasurer", "Nobody special", "res/person2.jpg");
+const personThreeDetails = new person("Bret", "Secretary", "A special man", "res/person3.jpg");
+const personFourDetails = new person("George", "Board Memeber", "A dork", "res/person4.jpg");
 
 updateDisplay("person1")
 
@@ -52,7 +52,7 @@ function updateDisplay(pID){
 
     personName.innerHTML = personSelected.name;
     personMajor.innerHTML = personSelected.major;
-    personDetails.innerHTML = personSelected.details;
+    personDetails.innerHTML = "";
     backgroundMen.style.backgroundImage = "url(" + personSelected.backgroundSelected + ")";
     //personSelected.backgroundSelected;
 
